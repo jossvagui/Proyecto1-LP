@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-top{
+    background-color: #151f2a;
+    padding: 5px 20px;    
+}
+
+.navbar-top ul{
+    list-style-type: none;
+}
+
+.navbar-top a{
+    text-decoration: none;
+    color: azure;
+    display: block;
+    
+}
+.navbar-top a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.button{
+    border-bottom: #444 solid;
+}
+
+/* Menu movil*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
