@@ -20,7 +20,7 @@
     
 }
 .navbar-top a:hover{
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .menu li{
@@ -82,4 +82,62 @@
 
 .bars::after{
     top: -5px;
+}
+
+/* menu tablet */
+
+@media all and (min-width: 468px){
+    .menu{
+        justify-content: center;        
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toogle{
+        order: 2;
+    }
+    .button{
+        border: 0;
+    }
+    .button a{
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: #da260a;
+        border: 1px;
+        border-radius: 50em;        
+    }
+    .button a:hover{
+        background-color: #f72504;
+    }
+}
+
+/* menu desktop */
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toogle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
 }
