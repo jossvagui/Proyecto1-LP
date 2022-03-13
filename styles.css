@@ -20,7 +20,7 @@
     
 }
 .navbar-top a:hover{
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 .logo img{    
@@ -107,6 +107,18 @@ body{
     cursor: pointer;
     color: #fff;
 }
+.newsletter .button:hover{
+    background-color: #052b53;
+}
+
+.titulo{
+    background-color: #eeeeee;
+    color: #052b53;
+    padding-top: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    
+}
 
 /* blog */
 .post-list{
@@ -125,6 +137,10 @@ body{
     max-width: 1000px;
     margin: auto;  
     
+}
+
+.post{
+    margin-top: 10px;
 }
 
 .post-img-1{
@@ -215,6 +231,7 @@ body{
     transform: translateY(-2px);
 }
 
+
 /* adicional */
 .about{
     width: 100%;
@@ -239,6 +256,7 @@ body{
 
 .about-text{
     margin-left: 50px;
+    margin-right: 50px;
 }
 .content-about img{
     box-shadow: 5px 1px 6px 1px rgba(0, 0, 0, .5);    
@@ -368,6 +386,8 @@ body{
 }
 
 /* ----- Menu movil ----- */
+
+
 .menu {
     display: flex;
     flex-wrap: wrap;
@@ -396,7 +416,7 @@ body{
 }
 
 .item.active{
-    display: block;
+    display: block;   
 }
 
 .bars{
@@ -422,6 +442,8 @@ body{
 .bars::after{
     top: -5px;
 }
+
+
 
 @media screen and (max-width:840px) {
     .footer .group-1{
@@ -461,12 +483,49 @@ body{
         border: 1px;
         border-radius: 50em;        
     }
+    
     .button a:hover{
         background-color: #f72504;
+        color: #fff;
     }
+    
+    .button2 a:hover{
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: transparent;
+        border-radius: 30px; 
+        border: 2px solid #f82707;
+        transition: .2s;
+    }    
+
 }
 
 @media (max-width: 767px){
+
+    .content-hero{
+        position: relative;
+        top: 50%;        
+    }
+
+    .content-hero h1{  
+        margin: 20px 0px 20px;
+        font-size: 40px;
+           
+    }
+    .content-hero h3{     
+        font-size: 15px;
+        margin-bottom: 65px;       
+    }
+    .content-hero h4{
+        font-size: 20px;          
+    }
+    
+    .newsletter form{
+        width: 350px;
+        max-width: 100%;
+        position: relative;
+    }
+
     .content{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -518,13 +577,31 @@ body{
 }
 
 @media (max-width: 500px){
+    .button2 a:hover{
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: transparent;
+        border-radius: 30px; 
+        border: 2px solid #f82707;
+        transition: .2s;
+    }    
+    .button a:hover{
+        text-decoration: none;
+        padding: 7px 15px;
+        background-color: #f72504;
+        border-radius: 30px; 
+        
+        transition: .2s;
+    }    
+
     .hero{
     height: 70vh;
     }
 
-    .content-hero{        
+    .content-hero{
+        position: relative;
         top: 50%;        
-    }
+    } 
 
     .content{
         grid-template-columns: repeat(1, 1fr);
@@ -532,7 +609,7 @@ body{
     
     .content-hero h1{  
         margin: 20px 0px 20px;
-        font-size: 35px;
+        font-size: 32px;
            
     }
     .content-hero h3{     
@@ -541,7 +618,7 @@ body{
         color: #052b53;    
     }
     .content-hero h4{
-        font-size: 20px;          
+        font-size: 18px;          
     }
     
     .newsletter form{
